@@ -16,10 +16,6 @@ h1 {
     color: #FFF;
 }
 
-h2 {
-    font-size: 1.3125rem;
- }
-
 strong {
     font-weight: 900;
  }
@@ -41,31 +37,90 @@ strong {
     color: #F18119;
 }
 
+h2 {
+    font-size: 1.3125rem;
+ }
+
+.main-content-subtitle {
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+}
+
 .fine-print {
     font-size: 0.625rem;
     letter-spacing: .5px;
 }
-@media (min-width: 1000px){
+/* media query for typography
+*/
+@media (min-width: 6   50px){
     body {
         font-size: 1.125rem;
     }
     h1 {
         font-size: 3.5rem;
     }
+    /* This can be refractored.  hint: use a comma */
     h2 {
         font-size: 1.75rem;
      }
-     .intro-subtitle {
+    .intro-subtitle {
         font-size: 1.75rem;
     }
 }
 
 /* =================
-   Intro section 
+   Layout
    ================= */
+
+/* Intro Section */
 
 .intro {
     background-color: #404040;
     background-image: url(../images/dark-ribs.jpg);
-    padding: 5em .25em;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;    /* top L/R bottom*/
+
+    display: flex;
+    flex-direction: column;
 }
+
+h1 {
+    margin: 2em 0;
+}
+
+.intro-subtitle {
+    margin: 0;
+}
+.top-text {
+    order: -1;
+}
+
+/* Main-content Section */
+
+.main-content {
+    padding: 2em 1em;
+}
+
+h2 {
+    margin: 0;
+}
+.main-content-subtitle {
+    margin-top: 0;
+}
+
+/* media query for layout */
+
+@media (min-width: 650px) {
+    body {
+        background-color: lightpink;
+        display: flex;
+    }
+    .intro,
+    .main-content {
+        width: 50%;
+    }
+}
+
+

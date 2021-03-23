@@ -17,6 +17,14 @@
 		background-images 
 			- It's good practice to have a background color set just in case the image doesn't load. This is especially important when your text is white
 
+
+		- collapsing margins go away when display flex is on
+
+		-as the layout is being worked on, the margins are being added to the typography section.  I understand why.  It cuts down on the amount of code you have to write, and that's good. However, for learning purpose I'm not a huge fan of this.  I can refactor my code later, but for now I will add put margins in the layout. same goes for order.  order has to be used with display flex. it won't work without.  So for my sake right now it's going to be in the layout portion.  
+
+		-disply: flex on body :: this is rare but it's more a thought exercise.  When I first started writing up this code I thought the .into and .main-content would be wrapped in a container div that becomes flex.  OOH, IDEA, I could set the display flex on .container instead of body.  Maybe that will be a good PULL request thing in github to try out.
+
+
 ## Supporting Scrimba
 
 Since 2017, we have created over 20 free courses on Scrimba, and we're going to
